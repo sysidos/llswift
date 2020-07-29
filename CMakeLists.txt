@@ -15,9 +15,10 @@ set(SWIFT_VERSION "3.1.1" CACHE STRING
     "The user-visible version of the Swift compiler")
 
 
-#add_executable(swift main.cpp)
 include_directories(include)
 add_subdirectory(lib)
+
+add_executable(swift main.cpp)
 
 llvm_map_components_to_libnames(llvm_libs core)
 target_link_libraries(swift ${llvm_libs})
