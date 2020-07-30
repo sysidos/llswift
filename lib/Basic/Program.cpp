@@ -11,31 +11,49 @@
 //===----------------------------------------------------------------------===//
 
 #include "swift/Basic/Program.h"
+//
+//#include "llvm/Config/config.h"
+//#include "llvm/Support/Program.h"
+//
+//#if LLVM_ON_UNIX
+//#if HAVE_UNISTD_H
+//#include <unistd.h>
+//#endif
+//#endif
+//
+//int swift::ExecuteInPlace(const char *Program, const char **args,
+//                          const char **env) {
+//#if LLVM_ON_UNIX
+//  int result;
+//  if (env)
+//    result = execve(Program, const_cast<char **>(args),
+//                    const_cast<char **>(env));
+//  else
+//    result = execv(Program, const_cast<char **>(args));
+//
+//  return result;
+//#else
+//  int result = llvm::sys::ExecuteAndWait(Program, args, env);
+//  if (result >= 0)
+//    exit(result);
+//  return result;
+//#endif
+//}
 
-#include "llvm/Config/config.h"
+#include "llvm/ADT/StringExtras.h"
 #include "llvm/Support/Program.h"
-
-#if LLVM_ON_UNIX
-#if HAVE_UNISTD_H
-#include <unistd.h>
-#endif
-#endif
 
 int swift::ExecuteInPlace(const char *Program, const char **args,
                           const char **env) {
-#if LLVM_ON_UNIX
-  int result;
-  if (env)
-    result = execve(Program, const_cast<char **>(args),
-                    const_cast<char **>(env));
-  else
-    result = execv(Program, const_cast<char **>(args));
 
-  return result;
-#else
-  int result = llvm::sys::ExecuteAndWait(Program, args, env);
+    llvm::Optional<llvm::ArrayRef<llvm::StringRef>> Env = llvm::None;
+
+  if (env)
+    Env = llvm::toStringRefArray(env);
+  int result =
+      llvm::sys::ExecuteAndWait(Program, llvm::toStringRefArray(args), Env);
   if (result >= 0)
     exit(result);
   return result;
-#endif
+
 }

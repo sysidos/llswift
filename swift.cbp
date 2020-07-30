@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="swift"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\opt\;CMake Files\..\..\..\..\usr\local\opt\llvm\;CMake Files\..\..\..\..\usr\local\opt\llvm\lib\;CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\;CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\llvm\;CMake Files\include\;CMake Files\include\swift\;CMake Files\lib\;CMake Files\lib\AST\;CMake Files\lib\Basic\;CMake Files\lib\Parse\;CMake Files\lib\Sema\;CMake Files\lib\Serialization\;CMake Files\lib\SIL\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/p21_0044/Desktop/llswift"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/p21_0044/Desktop/llswift"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/p21_0044/Desktop/llswift"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="swift">
+				<Option output="/Users/p21_0044/Desktop/llswift/swift" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/p21_0044/Desktop/llswift"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/include"/>
+					<Add directory="/Users/p21_0044/Desktop/llswift/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 swift"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="swift/fast">
+				<Option output="/Users/p21_0044/Desktop/llswift/swift" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/p21_0044/Desktop/llswift"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/include"/>
+					<Add directory="/Users/p21_0044/Desktop/llswift/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 swift/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="intrinsics_gen">
+				<Option working_dir="/Users/p21_0044/Desktop/llswift"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 intrinsics_gen"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="swiftAST">
+				<Option output="/Users/p21_0044/Desktop/llswift/lib/AST/libswiftAST.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/p21_0044/Desktop/llswift/lib/AST"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/include"/>
+					<Add directory="/Users/p21_0044/Desktop/llswift/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/AST/Makefile&quot;  VERBOSE=1 swiftAST"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/AST/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/AST/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/AST/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="swiftAST/fast">
+				<Option output="/Users/p21_0044/Desktop/llswift/lib/AST/libswiftAST.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/p21_0044/Desktop/llswift/lib/AST"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/include"/>
+					<Add directory="/Users/p21_0044/Desktop/llswift/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/AST/Makefile&quot;  VERBOSE=1 swiftAST/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/AST/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/AST/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/AST/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="swiftBasic">
+				<Option output="/Users/p21_0044/Desktop/llswift/lib/Basic/libswiftBasic.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/p21_0044/Desktop/llswift/lib/Basic"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/include"/>
+					<Add directory="/Users/p21_0044/Desktop/llswift/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Basic/Makefile&quot;  VERBOSE=1 swiftBasic"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Basic/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Basic/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Basic/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="swiftBasic/fast">
+				<Option output="/Users/p21_0044/Desktop/llswift/lib/Basic/libswiftBasic.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/p21_0044/Desktop/llswift/lib/Basic"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/include"/>
+					<Add directory="/Users/p21_0044/Desktop/llswift/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Basic/Makefile&quot;  VERBOSE=1 swiftBasic/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Basic/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Basic/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Basic/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="swiftParse">
+				<Option output="/Users/p21_0044/Desktop/llswift/lib/Parse/libswiftParse.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/p21_0044/Desktop/llswift/lib/Parse"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/include"/>
+					<Add directory="/Users/p21_0044/Desktop/llswift/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Parse/Makefile&quot;  VERBOSE=1 swiftParse"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Parse/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Parse/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Parse/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="swiftParse/fast">
+				<Option output="/Users/p21_0044/Desktop/llswift/lib/Parse/libswiftParse.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/p21_0044/Desktop/llswift/lib/Parse"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/include"/>
+					<Add directory="/Users/p21_0044/Desktop/llswift/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Parse/Makefile&quot;  VERBOSE=1 swiftParse/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Parse/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Parse/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Parse/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="swiftSema">
+				<Option output="/Users/p21_0044/Desktop/llswift/lib/Sema/libswiftSema.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/p21_0044/Desktop/llswift/lib/Sema"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/include"/>
+					<Add directory="/Users/p21_0044/Desktop/llswift/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Sema/Makefile&quot;  VERBOSE=1 swiftSema"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Sema/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Sema/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Sema/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="swiftSema/fast">
+				<Option output="/Users/p21_0044/Desktop/llswift/lib/Sema/libswiftSema.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/p21_0044/Desktop/llswift/lib/Sema"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/include"/>
+					<Add directory="/Users/p21_0044/Desktop/llswift/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Sema/Makefile&quot;  VERBOSE=1 swiftSema/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Sema/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Sema/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Sema/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="swiftSerialization">
+				<Option output="/Users/p21_0044/Desktop/llswift/lib/Serialization/libswiftSerialization.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/p21_0044/Desktop/llswift/lib/Serialization"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/include"/>
+					<Add directory="/Users/p21_0044/Desktop/llswift/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Serialization/Makefile&quot;  VERBOSE=1 swiftSerialization"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Serialization/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Serialization/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Serialization/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="swiftSerialization/fast">
+				<Option output="/Users/p21_0044/Desktop/llswift/lib/Serialization/libswiftSerialization.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/p21_0044/Desktop/llswift/lib/Serialization"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/include"/>
+					<Add directory="/Users/p21_0044/Desktop/llswift/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Serialization/Makefile&quot;  VERBOSE=1 swiftSerialization/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Serialization/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Serialization/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Serialization/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="swiftSIL">
+				<Option output="/Users/p21_0044/Desktop/llswift/lib/SIL/libswiftSIL.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/p21_0044/Desktop/llswift/lib/SIL"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/include"/>
+					<Add directory="/Users/p21_0044/Desktop/llswift/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/SIL/Makefile&quot;  VERBOSE=1 swiftSIL"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/SIL/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/SIL/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/SIL/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="swiftSIL/fast">
+				<Option output="/Users/p21_0044/Desktop/llswift/lib/SIL/libswiftSIL.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/p21_0044/Desktop/llswift/lib/SIL"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/include"/>
+					<Add directory="/Users/p21_0044/Desktop/llswift/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/SIL/Makefile&quot;  VERBOSE=1 swiftSIL/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/SIL/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/SIL/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/SIL/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/ASTContext.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/ASTDumper.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/ASTMangler.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/ASTNode.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/ASTPrinter.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/ASTScope.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/ASTVerifier.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/ASTWalker.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/ArchetypeBuilder.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/Attr.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/Availability.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/AvailabilitySpec.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/Builtins.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/CaptureInfo.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/ConcreteDeclRef.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/ConformanceLookupTable.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/ConformanceLookupTable.h">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/Decl.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/DeclContext.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/DeclNameLoc.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/DefaultArgumentKind.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/DiagnosticEngine.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/DiagnosticList.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/DocComment.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/Expr.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/GenericEnvironment.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/GenericSignature.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/Identifier.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/LayoutConstraint.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/LookupVisibleDecls.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/Mangle.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/Module.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/ModuleLoader.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/ModuleNameLookup.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/NameLookup.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/Parameter.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/Pattern.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/PlatformKind.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/PrettyStackTrace.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/ProtocolConformance.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/RawComment.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/SILLayout.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/SourceEntityWalker.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/Stmt.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/Substitution.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/SubstitutionMap.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/Type.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/TypeJoinMeet.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/TypeRefinementContext.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/TypeRepr.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/TypeWalker.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/USRGeneration.cpp">
+			<Option target="swiftAST"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/Cache.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/ClusteredBitVector.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/Demangle.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/DemangleWrappers.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/Demangler.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/DiagnosticConsumer.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/DiverseStack.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/Edit.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/EditorPlaceholder.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/FileSystem.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/JSONSerialization.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/LLVMContext.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/LangOptions.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/Mangler.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/ManglingUtils.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/Platform.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/PrefixMap.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/PrettyStackTrace.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/PrimitiveParsing.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/Program.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/Punycode.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/PunycodeUTF8.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/QuotedString.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/Remangle.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/Remangler.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/SourceLoc.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/StringExtras.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/ThreadSafeRefCounted.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/Timer.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/UUID.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/Unicode.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/Version.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Parse/Lexer.cpp">
+			<Option target="swiftParse"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Parse/ParseDecl.cpp">
+			<Option target="swiftParse"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Parse/ParseExpr.cpp">
+			<Option target="swiftParse"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Parse/ParseGeneric.cpp">
+			<Option target="swiftParse"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Parse/ParsePattern.cpp">
+			<Option target="swiftParse"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Parse/ParseSIL.cpp">
+			<Option target="swiftParse"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Parse/ParseStmt.cpp">
+			<Option target="swiftParse"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Parse/ParseType.cpp">
+			<Option target="swiftParse"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Parse/Parser.cpp">
+			<Option target="swiftParse"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Parse/PersistentParserState.cpp">
+			<Option target="swiftParse"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Parse/Scope.cpp">
+			<Option target="swiftParse"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/AbstractionPattern.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/Bridging.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/Dominance.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/DynamicCasts.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/InstructionUtils.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/Linker.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/Linker.h">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/LoopInfo.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/Mangle.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/PrettyStackTrace.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/Projection.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/SIL.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/SILArgument.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/SILBasicBlock.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/SILBuilder.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/SILCoverageMap.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/SILDeclRef.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/SILDefaultWitnessTable.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/SILFunction.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/SILFunctionType.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/SILGlobalVariable.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/SILInstruction.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/SILInstructions.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/SILLocation.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/SILModule.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/SILOpenedArchetypesTracker.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/SILOwnershipVerifier.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/SILPrinter.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/SILSuccessor.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/SILType.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/SILVTable.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/SILValue.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/SILVerifier.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/SILWitnessTable.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/TypeLowering.cpp">
+			<Option target="swiftSIL"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/CSApply.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/CSDiag.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/CSGen.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/CSRanking.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/CSSimplify.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/CSSolver.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/CodeSynthesis.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/CodeSynthesis.h">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/Constraint.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/Constraint.h">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/ConstraintGraph.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/ConstraintGraph.h">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/ConstraintLocator.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/ConstraintLocator.h">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/ConstraintSystem.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/ConstraintSystem.h">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/DerivedConformanceEquatableHashable.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/DerivedConformanceError.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/DerivedConformanceRawRepresentable.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/DerivedConformances.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/DerivedConformances.h">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/ITCDecl.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/ITCNameLookup.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/ITCType.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/InstrumenterSupport.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/InstrumenterSupport.h">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/IterativeTypeChecker.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/MiscDiagnostics.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/MiscDiagnostics.h">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/NameBinding.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/PCMacro.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/PlaygroundTransform.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/ResilienceDiagnostics.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/SourceLoader.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/TypeCheckAttr.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/TypeCheckAvailability.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/TypeCheckAvailability.h">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/TypeCheckCaptures.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/TypeCheckConstraints.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/TypeCheckDecl.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/TypeCheckError.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/TypeCheckExpr.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/TypeCheckExprObjC.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/TypeCheckGeneric.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/TypeCheckNameLookup.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/TypeCheckPattern.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/TypeCheckProtocol.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/TypeCheckREPL.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/TypeCheckRequest.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/TypeCheckStmt.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/TypeCheckType.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/TypeChecker.cpp">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/TypeChecker.h">
+			<Option target="swiftSema"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Serialization/Deserialization.cpp">
+			<Option target="swiftSerialization"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Serialization/DeserializeSIL.cpp">
+			<Option target="swiftSerialization"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Serialization/DeserializeSIL.h">
+			<Option target="swiftSerialization"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Serialization/ModuleFile.cpp">
+			<Option target="swiftSerialization"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Serialization/Serialization.cpp">
+			<Option target="swiftSerialization"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Serialization/Serialization.h">
+			<Option target="swiftSerialization"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Serialization/SerializeSIL.cpp">
+			<Option target="swiftSerialization"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Serialization/SerializedModuleLoader.cpp">
+			<Option target="swiftSerialization"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Serialization/SerializedSILLoader.cpp">
+			<Option target="swiftSerialization"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/main.cpp">
+			<Option target="swift"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/../../../../usr/local/opt/llvm/lib/cmake/llvm/LLVM-Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/../../../../usr/local/opt/llvm/lib/cmake/llvm/LLVMConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/../../../../usr/local/opt/llvm/lib/cmake/llvm/LLVMConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/../../../../usr/local/opt/llvm/lib/cmake/llvm/LLVMExports-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/../../../../usr/local/opt/llvm/lib/cmake/llvm/LLVMExports.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/include/swift/Config.h.in">
+			<Option virtualFolder="CMake Files\include\swift\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/AST/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\AST\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\Basic\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Parse/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\Parse\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\Sema\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Serialization/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\Serialization\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\SIL\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

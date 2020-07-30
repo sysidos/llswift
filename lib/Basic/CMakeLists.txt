@@ -82,7 +82,6 @@ add_library(swiftBasic STATIC
   Remangler.cpp
   SourceLoc.cpp
   StringExtras.cpp
-  TaskQueue.cpp
   ThreadSafeRefCounted.cpp
   Timer.cpp
   Unicode.cpp

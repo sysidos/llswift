@@ -134,7 +134,8 @@ public:
   /// Returns the identifier for the buffer with the given ID.
   ///
   /// \p BufferID must be a valid buffer ID.
-  const char *getIdentifierForBuffer(unsigned BufferID) const;
+//  const char *getIdentifierForBuffer(unsigned BufferID) const;
+  StringRef getIdentifierForBuffer(unsigned BufferID) const;
 
   /// \brief Returns a SourceRange covering the entire specified buffer.
   ///
@@ -167,7 +168,7 @@ public:
   /// location.
   ///
   /// This respects #line directives.
-  const char *getBufferIdentifierForLoc(SourceLoc Loc) const {
+  StringRef getBufferIdentifierForLoc(SourceLoc Loc) const {
     if (auto VFile = getVirtualFile(Loc))
       return VFile->Name.c_str();
     else

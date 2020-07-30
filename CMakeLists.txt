@@ -13,7 +13,7 @@ include_directories(${LLVM_INCLUDE_DIRS})
 add_definitions(${LLVM_DEFINITIONS})
 llvm_map_components_to_libnames(llvm_libs support core analysis irreader bitreader bitwriter coverage debuginfoDWARF
         profiledata instrumentation object objcarcopts mc mcparser
-        bitreader bitwriter lto ipo option core support)
+        bitreader bitwriter lto ipo option config)
 
 
 
@@ -29,16 +29,17 @@ set_property(SOURCE lib/Basic/Version.cpp APPEND_STRING PROPERTY COMPILE_FLAGS
         " -DSWIFT_VERSION=${SWIFT_VERSION} -DSWIFT_VERSION_MAJOR=${SWIFT_VERSION_MAJOR} -DSWIFT_VERSION_MINOR=${SWIFT_VERSION_MINOR}")
 
 
-
-
+configure_file(include/swift/Config.h.in include/swift/Config.h
+        ESCAPE_QUOTES @ONLY)
 
 
 include_directories(include)
 add_subdirectory(lib)
 
 
-add_library(swift include lib)
+add_executable(swift main.cpp)
 target_link_libraries(swift ${llvm_libs})
+target_link_libraries(swift swiftBasic)
 
 
 
@@ -58,3 +59,7 @@ else()
   include_directories(${LIBUUID_INCLUDE_DIR})
   target_link_libraries(swift ${LIBUUID_LIBRARY})
 endif()
+#
+#project(llswift)
+#add_executable(llswift main.cpp)
+#target_link_libraries(llswift swift)

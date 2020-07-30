@@ -20,7 +20,7 @@
 
 #include "swift/Basic/LLVM.h"
 #include "swift/Basic/Version.h"
-#include "clang/Basic/VersionTuple.h"
+//#include "clang/Basic/VersionTuple.h"
 #include "llvm/ADT/ArrayRef.h"
 #include "llvm/ADT/SmallVector.h"
 #include "llvm/ADT/StringRef.h"
@@ -174,23 +174,23 @@ namespace swift {
     ///
     /// This is only implemented on certain OSs. If no target has been
     /// configured, returns v0.0.0.
-    clang::VersionTuple getMinPlatformVersion() const {
-      unsigned major, minor, revision;
-      if (Target.isMacOSX()) {
-        Target.getMacOSXVersion(major, minor, revision);
-      } else if (Target.isiOS()) {
-        Target.getiOSVersion(major, minor, revision);
-      } else if (Target.isWatchOS()) {
-        Target.getOSVersion(major, minor, revision);
-      } else if (Target.isOSLinux() || Target.isOSFreeBSD() ||
-                 Target.isAndroid() || Target.isOSWindows() ||
-                 Target.isPS4() || Target.getTriple().empty()) {
-        major = minor = revision = 0;
-      } else {
-        llvm_unreachable("Unsupported target OS");
-      }
-      return clang::VersionTuple(major, minor, revision);
-    }
+//    clang::VersionTuple getMinPlatformVersion() const {
+//      unsigned major, minor, revision;
+//      if (Target.isMacOSX()) {
+//        Target.getMacOSXVersion(major, minor, revision);
+//      } else if (Target.isiOS()) {
+//        Target.getiOSVersion(major, minor, revision);
+//      } else if (Target.isWatchOS()) {
+//        Target.getOSVersion(major, minor, revision);
+//      } else if (Target.isOSLinux() || Target.isOSFreeBSD() ||
+//                 Target.isAndroid() || Target.isOSWindows() ||
+//                 Target.isPS4() || Target.getTriple().empty()) {
+//        major = minor = revision = 0;
+//      } else {
+//        llvm_unreachable("Unsupported target OS");
+//      }
+//      return clang::VersionTuple(major, minor, revision);
+//    }
 
     /// Sets an implicit platform condition.
     ///

@@ -1,2 +1,2 @@
-configure_file(Config.h.in ${CMAKE_CURRENT_BINARY_DIR}/Config.h
-        ESCAPE_QUOTES @ONLY)
+#configure_file(Config.h.in ${CMAKE_CURRENT_BINARY_DIR}/Config.h
+#        ESCAPE_QUOTES @ONLY)

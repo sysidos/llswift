@@ -14,6 +14,9 @@
 //
 //===----------------------------------------------------------------------===//
 
+#ifdef DEBUG
+
+
 #define DEBUG_TYPE "swift-basic"
 #include "swift/Basic/DiagnosticConsumer.h"
 #include "llvm/ADT/StringRef.h"
@@ -31,3 +34,5 @@ void NullDiagnosticConsumer::handleDiagnostic(SourceManager &SM,
   DEBUG(llvm::dbgs() << "NullDiagnosticConsumer received diagnostic: "
                      << Text << "\n");
 }
+
+#endif
