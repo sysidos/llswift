@@ -32,7 +32,7 @@
 #include "llvm/ADT/StringRef.h"
 #include "llvm/Support/ErrorHandling.h"
 #include "llvm/Support/TrailingObjects.h"
-#include "clang/Basic/VersionTuple.h"
+//#include "clang/Basic/VersionTuple.h"
 
 namespace swift {
 class ASTPrinter;
@@ -583,16 +583,16 @@ public:
   AvailableAttr(SourceLoc AtLoc, SourceRange Range,
                    PlatformKind Platform,
                    StringRef Message, StringRef Rename,
-                   const clang::VersionTuple &Introduced,
-                   const clang::VersionTuple &Deprecated,
-                   const clang::VersionTuple &Obsoleted,
+//                   const clang::VersionTuple &Introduced,
+//                   const clang::VersionTuple &Deprecated,
+//                   const clang::VersionTuple &Obsoleted,
                    PlatformAgnosticAvailabilityKind PlatformAgnostic,
                    bool Implicit)
     : DeclAttribute(DAK_Available, AtLoc, Range, Implicit),
       Message(Message), Rename(Rename),
-      INIT_VER_TUPLE(Introduced),
-      INIT_VER_TUPLE(Deprecated),
-      INIT_VER_TUPLE(Obsoleted),
+//      INIT_VER_TUPLE(Introduced),
+//      INIT_VER_TUPLE(Deprecated),
+//      INIT_VER_TUPLE(Obsoleted),
       PlatformAgnostic(PlatformAgnostic),
       Platform(Platform)
   {}
@@ -611,13 +611,13 @@ public:
   const StringRef Rename;
 
   /// Indicates when the symbol was introduced.
-  const Optional<clang::VersionTuple> Introduced;
+//  const Optional<clang::VersionTuple> Introduced;
 
   /// Indicates when the symbol was deprecated.
-  const Optional<clang::VersionTuple> Deprecated;
+//  const Optional<clang::VersionTuple> Deprecated;
 
   /// Indicates when the symbol was obsoleted.
-  const Optional<clang::VersionTuple> Obsoleted;
+//  const Optional<clang::VersionTuple> Obsoleted;
 
   /// Indicates if the declaration has platform-agnostic availability.
   const PlatformAgnosticAvailabilityKind PlatformAgnostic;
@@ -674,9 +674,11 @@ public:
   static AvailableAttr *
   createPlatformAgnostic(ASTContext &C, StringRef Message, StringRef Rename = "",
                       PlatformAgnosticAvailabilityKind Reason
-                         = PlatformAgnosticAvailabilityKind::Unavailable,
-                         clang::VersionTuple Obsoleted
-                         = clang::VersionTuple());
+                         = PlatformAgnosticAvailabilityKind::Unavailable
+//                                 ,
+//                         clang::VersionTuple Obsoleted
+//                         = clang::VersionTuple()
+                                 );
 
   static bool classof(const DeclAttribute *DA) {
     return DA->getKind() == DAK_Available;

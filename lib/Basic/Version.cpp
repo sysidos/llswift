@@ -43,9 +43,9 @@
   SWIFT_MAKE_VERSION_STRING(SWIFT_VERSION_MAJOR, SWIFT_VERSION_MINOR)
 #endif
 
-#include "LLVMRevision.inc"
-#include "ClangRevision.inc"
-#include "SwiftRevision.inc"
+//#include "LLVMRevision.inc"
+//#include "ClangRevision.inc"
+//#include "SwiftRevision.inc"
 
 namespace swift {
 namespace version {
@@ -279,42 +279,42 @@ Version::preprocessorDefinition(StringRef macroName,
   return define;
 }
 
-Version::operator clang::VersionTuple() const
-{
-  switch (Components.size()) {
- case 0:
-   return clang::VersionTuple();
- case 1:
-   return clang::VersionTuple((unsigned)Components[0]);
- case 2:
-   return clang::VersionTuple((unsigned)Components[0],
-                              (unsigned)Components[1]);
- case 3:
-   return clang::VersionTuple((unsigned)Components[0],
-                              (unsigned)Components[1],
-                              (unsigned)Components[2]);
- case 4:
- case 5:
-   return clang::VersionTuple((unsigned)Components[0],
-                              (unsigned)Components[1],
-                              (unsigned)Components[2],
-                              (unsigned)Components[3]);
- default:
-   llvm_unreachable("swift::version::Version with 6 or more components");
-  }
-}
+//Version::operator clang::VersionTuple() const
+//{
+//  switch (Components.size()) {
+// case 0:
+//   return clang::VersionTuple();
+// case 1:
+//   return clang::VersionTuple((unsigned)Components[0]);
+// case 2:
+//   return clang::VersionTuple((unsigned)Components[0],
+//                              (unsigned)Components[1]);
+// case 3:
+//   return clang::VersionTuple((unsigned)Components[0],
+//                              (unsigned)Components[1],
+//                              (unsigned)Components[2]);
+// case 4:
+// case 5:
+//   return clang::VersionTuple((unsigned)Components[0],
+//                              (unsigned)Components[1],
+//                              (unsigned)Components[2],
+//                              (unsigned)Components[3]);
+// default:
+//   llvm_unreachable("swift::version::Version with 6 or more components");
+//  }
+//}
 
 bool Version::isValidEffectiveLanguageVersion() const {
-  for (auto verStr : getValidEffectiveVersions()) {
-    auto v = parseVersionString(verStr, SourceLoc(), nullptr);
-    assert(v.hasValue());
-    // In this case, use logical-equality _and_ precision-equality. We do not
-    // want to permit users requesting effective language versions more precise
-    // than our whitelist (eg. we permit 3 but not 3.0 or 3.0.0), since
-    // accepting such an argument promises more than we're able to deliver.
-    if (v == *this && v.getValue().size() == size())
-      return true;
-  }
+//  for (auto verStr : getValidEffectiveVersions()) {
+//    auto v = parseVersionString(verStr, SourceLoc(), nullptr);
+//    assert(v.hasValue());
+//    // In this case, use logical-equality _and_ precision-equality. We do not
+//    // want to permit users requesting effective language versions more precise
+//    // than our whitelist (eg. we permit 3 but not 3.0 or 3.0.0), since
+//    // accepting such an argument promises more than we're able to deliver.
+//    if (v == *this && v.getValue().size() == size())
+//      return true;
+//  }
   return false;
 }
 

@@ -24,7 +24,7 @@
 #include "llvm/ADT/Optional.h"
 #include "llvm/ADT/SmallVector.h"
 #include "llvm/ADT/StringRef.h"
-#include "clang/Basic/VersionTuple.h"
+//#include "clang/Basic/VersionTuple.h"
 #include <string>
 
 namespace swift {
@@ -92,7 +92,7 @@ public:
 
   /// Convert to a (maximum-4-element) clang::VersionTuple, truncating
   /// away any 5th component that might be in this version.
-  operator clang::VersionTuple() const;
+//  operator clang::VersionTuple() const;
 
   /// Return whether this version is a valid Swift language version number
   /// to set the compiler to using -swift-version; this is not the same as
@@ -130,9 +130,9 @@ public:
 
   // Whitelist of backward-compatibility versions that we permit passing as
   // -swift-version <vers>
-  static std::array<StringRef, 2> getValidEffectiveVersions() {
-    return {{"3", "4"}};
-  };
+//  static std::array<StringRef, 2> getValidEffectiveVersions() {
+//    return {{"3", "4"}};
+//  };
 };
 
 bool operator>=(const Version &lhs, const Version &rhs);

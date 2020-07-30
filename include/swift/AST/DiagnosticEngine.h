@@ -102,7 +102,7 @@ namespace swift {
       StaticSpellingKind StaticSpellingKindVal;
       DescriptiveDeclKind DescriptiveDeclKindVal;
       const DeclAttribute *DeclAttributeVal;
-      clang::VersionTuple VersionVal;
+//      clang::VersionTuple VersionVal;
       LayoutConstraint LayoutConstraintVal;
     };
     
@@ -164,9 +164,9 @@ namespace swift {
         : Kind(DiagnosticArgumentKind::DeclAttribute),
           DeclAttributeVal(attr) {}
 
-    DiagnosticArgument(clang::VersionTuple version)
-      : Kind(DiagnosticArgumentKind::VersionTuple),
-        VersionVal(version) { }
+//    DiagnosticArgument(clang::VersionTuple version)
+//      : Kind(DiagnosticArgumentKind::VersionTuple),
+//        VersionVal(version) { }
 
     DiagnosticArgument(LayoutConstraint L)
       : Kind(DiagnosticArgumentKind::LayoutConstraint), LayoutConstraintVal(L) {
@@ -237,10 +237,10 @@ namespace swift {
       return DeclAttributeVal;
     }
 
-    clang::VersionTuple getAsVersionTuple() const {
-      assert(Kind == DiagnosticArgumentKind::VersionTuple);
-      return VersionVal;
-    }
+//    clang::VersionTuple getAsVersionTuple() const {
+//      assert(Kind == DiagnosticArgumentKind::VersionTuple);
+//      return VersionVal;
+//    }
 
     LayoutConstraint getAsLayoutConstraint() const {
       assert(Kind == DiagnosticArgumentKind::LayoutConstraint);
