@@ -32,9 +32,29 @@ set_property(SOURCE lib/Basic/Version.cpp APPEND_STRING PROPERTY COMPILE_FLAGS
 
 
 
+
 include_directories(include)
 add_subdirectory(lib)
 
 
 add_library(swift include lib)
 target_link_libraries(swift ${llvm_libs})
+
+
+
+# On non-Darwin require UUID.
+if(CMAKE_SYSTEM_NAME STREQUAL "Darwin")
+  set(UUID_INCLUDE "")
+  set(UUID_LIBRARIES "")
+elseif(CMAKE_SYSTEM_NAME STREQUAL "Windows")
+  set(UUID_INCLUDE "")
+  set(UUID_LIBRARIES "ole32.lib")
+else()
+#   find_package(UUID REQUIRED)
+#   set(UUID_INCLUDE "-I${UUID_INCLUDE_DIRS}")
+
+  find_path(LIBUUID_INCLUDE_DIR uuid.h PATH_SUFFIXES uuid)
+  find_library(LIBUUID_LIBRARY libuuid.a)
+  include_directories(${LIBUUID_INCLUDE_DIR})
+  target_link_libraries(swift ${LIBUUID_LIBRARY})
+endif()
