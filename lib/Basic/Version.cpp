@@ -14,6 +14,7 @@
 //
 //===----------------------------------------------------------------------===//
 
+#include "clang/Basic/CharInfo.h"
 #include "llvm/Support/raw_ostream.h"
 #include "llvm/ADT/SmallString.h"
 #include "swift/AST/DiagnosticsParse.h"

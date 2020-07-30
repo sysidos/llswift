@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="swift"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\opt\;CMake Files\..\..\..\..\usr\local\opt\llvm\;CMake Files\..\..\..\..\usr\local\opt\llvm\lib\;CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\;CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\llvm\;CMake Files\lib\;CMake Files\lib\Basic\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/p21_0044/CLionProjects/llswift/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/p21_0044/CLionProjects/llswift/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/p21_0044/CLionProjects/llswift/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="swift">
+				<Option output="/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/libswift.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/p21_0044/CLionProjects/llswift/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/include"/>
+					<Add directory="/Users/p21_0044/CLionProjects/llswift/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 swift"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="swift/fast">
+				<Option output="/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/libswift.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/p21_0044/CLionProjects/llswift/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/include"/>
+					<Add directory="/Users/p21_0044/CLionProjects/llswift/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 swift/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="intrinsics_gen">
+				<Option working_dir="/Users/p21_0044/CLionProjects/llswift/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 intrinsics_gen"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="swiftBasic">
+				<Option output="/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/lib/Basic/libswiftBasic.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/lib/Basic"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/include"/>
+					<Add directory="/Users/p21_0044/CLionProjects/llswift/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/lib/Basic/Makefile&quot;  VERBOSE=1 swiftBasic"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/lib/Basic/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/lib/Basic/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/lib/Basic/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="swiftBasic/fast">
+				<Option output="/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/lib/Basic/libswiftBasic.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/lib/Basic"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/include"/>
+					<Add directory="/Users/p21_0044/CLionProjects/llswift/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/lib/Basic/Makefile&quot;  VERBOSE=1 swiftBasic/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/lib/Basic/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/lib/Basic/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/p21_0044/CLionProjects/llswift/cmake-build-debug/lib/Basic/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib">
+			<Option target="swift"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/Cache.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/ClusteredBitVector.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/Demangle.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/DemangleWrappers.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/Demangler.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/DiagnosticConsumer.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/DiverseStack.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/Edit.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/EditorPlaceholder.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/FileSystem.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/JSONSerialization.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/LLVMContext.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/LangOptions.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/Mangler.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/ManglingUtils.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/Platform.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/PrefixMap.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/PrettyStackTrace.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/PrimitiveParsing.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/Program.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/Punycode.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/PunycodeUTF8.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/QuotedString.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/Remangle.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/Remangler.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/SourceLoc.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/StringExtras.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/TaskQueue.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/ThreadSafeRefCounted.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/Timer.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/UUID.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/Unicode.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/Version.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/../../../../usr/local/opt/llvm/lib/cmake/llvm/LLVM-Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/../../../../usr/local/opt/llvm/lib/cmake/llvm/LLVMConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/../../../../usr/local/opt/llvm/lib/cmake/llvm/LLVMConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/../../../../usr/local/opt/llvm/lib/cmake/llvm/LLVMExports-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/../../../../usr/local/opt/llvm/lib/cmake/llvm/LLVMExports.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/CLionProjects/llswift/lib/Basic/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\Basic\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

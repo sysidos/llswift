@@ -14,11 +14,21 @@ add_definitions(${LLVM_DEFINITIONS})
 set(SWIFT_VERSION "3.1.1" CACHE STRING
     "The user-visible version of the Swift compiler")
 
+llvm_map_components_to_libnames(llvm_libs support core irreader tablegen)
+
+#function(add_swift_library arg)
+#    add_library(${arg})
+##    target_link_libraries(${name} ${llvm_libs})
+#endfunction(add_swift_library)
+
+
 include_directories(include)
 add_subdirectory(lib)
+#link_directories(lib)
+
 
 add_library(swift STATIC lib)
 #add_executable(swift main.cpp)
 
-llvm_map_components_to_libnames(llvm_libs support core irreader tablegen)
+
 target_link_libraries(swift ${llvm_libs})
