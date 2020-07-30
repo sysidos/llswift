@@ -50,36 +50,36 @@ add_library(swiftAST STATIC
   TypeRepr.cpp
   TypeWalker.cpp
   USRGeneration.cpp
-  LINK_LIBRARIES
-    swiftMarkup
-    swiftBasic
-
-  INTERFACE_LINK_LIBRARIES
-    # Clang dependencies.
-    # FIXME: Clang should really export these in some reasonable manner.
-    clangCodeGen
-    clangIndex
-    clangFormat
-    clangToolingCore
-    clangFrontendTool
-    clangFrontend
-    clangDriver
-    clangSerialization
-    clangParse
-    clangSema
-    clangAnalysis
-    clangEdit
-    clangRewriteFrontend
-    clangRewrite
-    clangAST
-    clangLex
-    clangAPINotes
-    clangBasic
-
-  LLVM_COMPONENT_DEPENDS
-    bitreader bitwriter coverage irreader debuginfoDWARF
-    profiledata instrumentation object objcarcopts mc mcparser
-    bitreader bitwriter lto ipo option core support ${LLVM_TARGETS_TO_BUILD}
+#  LINK_LIBRARIES
+#    swiftMarkup
+#    swiftBasic
+#
+#  INTERFACE_LINK_LIBRARIES
+#    # Clang dependencies.
+#    # FIXME: Clang should really export these in some reasonable manner.
+#    clangCodeGen
+#    clangIndex
+#    clangFormat
+#    clangToolingCore
+#    clangFrontendTool
+#    clangFrontend
+#    clangDriver
+#    clangSerialization
+#    clangParse
+#    clangSema
+#    clangAnalysis
+#    clangEdit
+#    clangRewriteFrontend
+#    clangRewrite
+#    clangAST
+#    clangLex
+#    clangAPINotes
+#    clangBasic
+#
+#  LLVM_COMPONENT_DEPENDS
+#    bitreader bitwriter coverage irreader debuginfoDWARF
+#    profiledata instrumentation object objcarcopts mc mcparser
+#    bitreader bitwriter lto ipo option core support ${LLVM_TARGETS_TO_BUILD}
   )
 
 # intrinsics_gen is the LLVM tablegen target that generates the include files

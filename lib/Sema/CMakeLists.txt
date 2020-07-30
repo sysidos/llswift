@@ -42,7 +42,8 @@ add_library(swiftSema STATIC
   TypeCheckStmt.cpp
   TypeCheckType.cpp
   TypeChecker.cpp
-  LINK_LIBRARIES
-    swiftParse
-    swiftAST)
+#  LINK_LIBRARIES
+#    swiftParse
+#    swiftAST
+        )
 

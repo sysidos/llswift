@@ -41,15 +41,15 @@ add_library(swiftIRGen STATIC
   StructLayout.cpp
   SwiftTargetInfo.cpp
   TypeLayoutVerifier.cpp
-  LINK_LIBRARIES
-    swiftAST
-    swiftLLVMPasses
-    swiftSIL
-    swiftSILGen
-    swiftSILOptimizer
-
-    # Clang dependencies.
-    # FIXME: Clang should really export these in some reasonable manner.
-    clangCodeGen
-    clangAST
+#  LINK_LIBRARIES
+#    swiftAST
+#    swiftLLVMPasses
+#    swiftSIL
+#    swiftSILGen
+#    swiftSILOptimizer
+#
+#    # Clang dependencies.
+#    # FIXME: Clang should really export these in some reasonable manner.
+#    clangCodeGen
+#    clangAST
 )

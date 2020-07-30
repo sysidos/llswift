@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.16)
 project(swift)
 
 set(CMAKE_CXX_STANDARD 14)
-
+# TODO cmark
 find_package(LLVM REQUIRED CONFIG)
 
 message(STATUS "Found LLVM ${LLVM_PACKAGE_VERSION}")
@@ -12,9 +12,11 @@ include_directories(${LLVM_INCLUDE_DIRS})
 add_definitions(${LLVM_DEFINITIONS})
 
 set(SWIFT_VERSION "3.1.1" CACHE STRING
-    "The user-visible version of the Swift compiler")
+        "The user-visible version of the Swift compiler")
 
-llvm_map_components_to_libnames(llvm_libs support core irreader tablegen)
+llvm_map_components_to_libnames(llvm_libs support core analysis irreader bitreader bitwriter coverage debuginfoDWARF
+        profiledata instrumentation object objcarcopts mc mcparser
+        bitreader bitwriter lto ipo option core support)
 
 #function(add_swift_library arg)
 #    add_library(${arg})

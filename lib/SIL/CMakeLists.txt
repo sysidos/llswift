@@ -33,9 +33,9 @@ add_library(swiftSIL STATIC
   SILVTable.cpp
   SILWitnessTable.cpp
   TypeLowering.cpp
-  LINK_LIBRARIES
-    swiftSerialization
-    swiftSema
+#  LINK_LIBRARIES
+#    swiftSerialization
+#    swiftSema
 )
 
 # intrinsics_gen is the LLVM tablegen target that generates the include files

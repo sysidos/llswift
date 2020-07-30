@@ -6,7 +6,7 @@ add_library(swiftLLVMPasses STATIC
   LLVMInlineTree.cpp
   LLVMMergeFunctions.cpp
 
-  LLVM_COMPONENT_DEPENDS
-  analysis
+#  LLVM_COMPONENT_DEPENDS
+#  analysis
   )
 

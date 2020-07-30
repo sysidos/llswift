@@ -11,12 +11,13 @@ add_library(swiftFrontend STATIC
   FrontendOptions.cpp
   PrintingDiagnosticConsumer.cpp
   SerializedDiagnosticConsumer.cpp
-  ${AppleHostVersionDetection}
-  DEPENDS SwiftOptions
-  LINK_LIBRARIES
-    swiftSIL
-    swiftOption
-    swiftParse
-    swiftSema
-    swiftSerialization)
+#  ${AppleHostVersionDetection}
+#  DEPENDS SwiftOptions
+#  LINK_LIBRARIES
+#    swiftSIL
+#    swiftOption
+#    swiftParse
+#    swiftSema
+#    swiftSerialization
+        )
 

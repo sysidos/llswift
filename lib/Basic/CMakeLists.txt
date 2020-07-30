@@ -98,19 +98,20 @@ add_library(swiftBasic STATIC
   Unicode.cpp
   UUID.cpp
   Version.cpp
-  ${version_inc_files}
-
-  # Platform-specific TaskQueue implementations
-  Unix/TaskQueue.inc
-
-  # Platform-agnostic fallback TaskQueue implementation
-  Default/TaskQueue.inc
-
-  UnicodeExtendedGraphemeClusters.cpp.gyb
-
-  C_COMPILE_FLAGS ${UUID_INCLUDE}
-  LINK_LIBRARIES ${UUID_LIBRARIES}
-  LLVM_COMPONENT_DEPENDS support)
+#  ${version_inc_files}
+#
+#  # Platform-specific TaskQueue implementations
+#  Unix/TaskQueue.inc
+#
+#  # Platform-agnostic fallback TaskQueue implementation
+#  Default/TaskQueue.inc
+#
+#  UnicodeExtendedGraphemeClusters.cpp.gyb
+#
+#  C_COMPILE_FLAGS ${UUID_INCLUDE}
+#  LINK_LIBRARIES ${UUID_LIBRARIES}
+#  LLVM_COMPONENT_DEPENDS support
+        )
 
 message(STATUS "Swift version: ${SWIFT_VERSION}")
 message(STATUS "Swift vendor: ${SWIFT_VENDOR}")
