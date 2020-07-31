@@ -14,4 +14,5 @@ add_library(
         swiftBasic STATIC
         Version.cpp
         UUID.cpp
+        Unicode.cpp
         )
