@@ -1,6 +1,0 @@
-/Users/p21_0044/Desktop/llswift/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/p21_0044/Desktop/llswift/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/p21_0044/Desktop/llswift/cmake-build-debug/CMakeFiles/swift.dir
-/Users/p21_0044/Desktop/llswift/cmake-build-debug/CMakeFiles/intrinsics_gen.dir
-/Users/p21_0044/Desktop/llswift/cmake-build-debug/lib/CMakeFiles/rebuild_cache.dir
-/Users/p21_0044/Desktop/llswift/cmake-build-debug/lib/CMakeFiles/edit_cache.dir
