@@ -3015,20 +3015,20 @@ ParserResult<AvailabilitySpec> Parser::parseAvailabilitySpec() {
 ParserResult<LanguageVersionConstraintAvailabilitySpec>
 Parser::parseLanguageVersionConstraintSpec() {
   SourceLoc SwiftLoc;
-  clang::VersionTuple Version;
+//  clang::VersionTuple Version;
   SourceRange VersionRange;
   if (!(Tok.isIdentifierOrUnderscore() && Tok.getText() == "swift"))
     return nullptr;
 
   SwiftLoc = Tok.getLoc();
   consumeToken();
-  if (parseVersionTuple(Version, VersionRange,
-                        diag::avail_query_expected_version_number)) {
-    return nullptr;
-  }
+//  if (parseVersionTuple( VersionRange,
+//                        diag::avail_query_expected_version_number)) {
+//    return nullptr;
+//  }
   return makeParserResult(new (Context)
                           LanguageVersionConstraintAvailabilitySpec(
-                            SwiftLoc, Version, VersionRange));
+                            SwiftLoc,VersionRange));
 }
 
 /// Parse platform-version constraint specification.
@@ -3058,13 +3058,13 @@ Parser::parsePlatformVersionConstraintSpec() {
     consumeToken();
   }
 
-  clang::VersionTuple Version;
-  SourceRange VersionRange;
-
-  if (parseVersionTuple(Version, VersionRange,
-                        diag::avail_query_expected_version_number)) {
-    return nullptr;
-  }
+//  clang::VersionTuple Version;
+//  SourceRange VersionRange;
+//
+//  if (parseVersionTuple(Version, VersionRange,
+//                        diag::avail_query_expected_version_number)) {
+//    return nullptr;
+//  }
 
   Optional<PlatformKind> Platform =
       platformFromString(PlatformIdentifier.str());

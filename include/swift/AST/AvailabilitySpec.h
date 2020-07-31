@@ -20,7 +20,7 @@
 #include "swift/AST/Identifier.h"
 #include "swift/Basic/SourceLoc.h"
 #include "swift/AST/PlatformKind.h"
-#include "clang/Basic/VersionTuple.h"
+//#include "clang/Basic/VersionTuple.h"
 
 namespace swift {
 class ASTContext;
@@ -64,17 +64,18 @@ class PlatformVersionConstraintAvailabilitySpec : public AvailabilitySpec {
   PlatformKind Platform;
   SourceLoc PlatformLoc;
 
-  clang::VersionTuple Version;
+//  clang::VersionTuple Version;
   SourceRange VersionSrcRange;
 
 public:
   PlatformVersionConstraintAvailabilitySpec(PlatformKind Platform,
                                             SourceLoc PlatformLoc,
-                                            clang::VersionTuple Version,
+//                                            clang::VersionTuple Version,
                                             SourceRange VersionSrcRange)
     : AvailabilitySpec(AvailabilitySpecKind::PlatformVersionConstraint),
       Platform(Platform),
-      PlatformLoc(PlatformLoc), Version(Version),
+      PlatformLoc(PlatformLoc),
+//      Version(Version),
       VersionSrcRange(VersionSrcRange) {}
 
   /// The required platform.
@@ -82,7 +83,7 @@ public:
   SourceLoc getPlatformLoc() const { return PlatformLoc; }
   
   // The platform version to compare against.
-  clang::VersionTuple getVersion() const { return Version; }
+//  clang::VersionTuple getVersion() const { return Version; }
   SourceRange getVersionSrcRange() const { return VersionSrcRange; }
 
   SourceRange getSourceRange() const;
@@ -105,21 +106,23 @@ public:
 class LanguageVersionConstraintAvailabilitySpec : public AvailabilitySpec {
   SourceLoc SwiftLoc;
 
-  clang::VersionTuple Version;
+//  clang::VersionTuple Version;
   SourceRange VersionSrcRange;
 
 public:
   LanguageVersionConstraintAvailabilitySpec(SourceLoc SwiftLoc,
-                                            clang::VersionTuple Version,
+//                                            clang::VersionTuple Version,
                                             SourceRange VersionSrcRange)
     : AvailabilitySpec(AvailabilitySpecKind::LanguageVersionConstraint),
-      SwiftLoc(SwiftLoc), Version(Version),
+      SwiftLoc(SwiftLoc),
+
+//      Version(Version),
       VersionSrcRange(VersionSrcRange) {}
 
   SourceLoc getSwiftLoc() const { return SwiftLoc; }
 
   // The platform version to compare against.
-  clang::VersionTuple getVersion() const { return Version; }
+//  clang::VersionTuple getVersion() const { return Version; }
   SourceRange getVersionSrcRange() const { return VersionSrcRange; }
 
   SourceRange getSourceRange() const;

@@ -118,7 +118,7 @@ public:
   class PotentialArchetype;
 
   using RequirementRHS =
-      llvm::PointerUnion3<Type, PotentialArchetype *, LayoutConstraint>;
+      llvm::PointerUnion<Type, PotentialArchetype *, LayoutConstraint>;
 
 private:
   class InferRequirementsWalker;
@@ -329,7 +329,7 @@ class ArchetypeBuilder::PotentialArchetype {
   /// associated type, the declaration of the associated type to which
   /// this potential archetype has been resolved. Or, for a type alias,
   /// the type alias decl.
-  llvm::PointerUnion3<Identifier, AssociatedTypeDecl *,
+  llvm::PointerUnion<Identifier, AssociatedTypeDecl *,
                       TypeAliasDecl *> NameOrAssociatedType;
 
   /// \brief The representative of the equivalent class of potential archetypes

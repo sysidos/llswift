@@ -704,8 +704,8 @@ public:
 
   /// Parse a version tuple of the form x[.y[.z]]. Returns true if there was
   /// an error parsing.
-  bool parseVersionTuple(clang::VersionTuple &Version, SourceRange &Range,
-                         const Diagnostic &D);
+//  bool parseVersionTuple(clang::VersionTuple &Version, SourceRange &Range,
+//                         const Diagnostic &D);
 
   bool parseTypeAttributeList(SourceLoc &InOutLoc, TypeAttributes &Attributes) {
     if (Tok.is(tok::at_sign) || Tok.is(tok::kw_inout))

@@ -62,7 +62,7 @@ private:
     using type = Pattern;
   };
 
-  typedef llvm::PointerUnion4<Stmt*, Expr*, Decl*, Pattern*> ASTNodeTy;
+  typedef llvm::PointerUnion<Stmt*, Expr*, Decl*, Pattern*> ASTNodeTy;
 
 public:
   enum LocationKind : unsigned {

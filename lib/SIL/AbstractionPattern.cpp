@@ -76,16 +76,16 @@ AbstractionPattern TypeConverter::getAbstractionPattern(VarDecl *var) {
   if (auto inout = dyn_cast<InOutType>(swiftType))
     swiftType = inout.getObjectType();
 
-  if (auto clangDecl = var->getClangDecl()) {
-    auto clangType = getClangType(clangDecl);
-    auto contextType = var->getDeclContext()->mapTypeIntoContext(swiftType);
-    swiftType = getLoweredBridgedType(
-        AbstractionPattern(genericSig, swiftType, clangType),
-        contextType,
-        SILFunctionTypeRepresentation::CFunctionPointer,
-        TypeConverter::ForMemory)->getCanonicalType();
-    return AbstractionPattern(genericSig, swiftType, clangType);
-  }
+//  if (auto clangDecl = var->getClangDecl()) {
+//    auto clangType = getClangType(clangDecl);
+//    auto contextType = var->getDeclContext()->mapTypeIntoContext(swiftType);
+//    swiftType = getLoweredBridgedType(
+//        AbstractionPattern(genericSig, swiftType, clangType),
+//        contextType,
+//        SILFunctionTypeRepresentation::CFunctionPointer,
+//        TypeConverter::ForMemory)->getCanonicalType();
+//    return AbstractionPattern(genericSig, swiftType, clangType);
+//  }
 
   return AbstractionPattern(genericSig, swiftType);
 }

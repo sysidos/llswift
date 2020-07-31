@@ -3233,28 +3233,28 @@ NOTE(availability_marked_unavailable, none,
 
 NOTE(availability_introduced_in_swift, none,
      "%0 was introduced in Swift %1",
-    (DeclName, clang::VersionTuple))
+    (DeclName))
 
 NOTE(availability_obsoleted, none,
      "%0 was obsoleted in %1 %2",
-    (DeclName, StringRef, clang::VersionTuple))
+    (DeclName, StringRef))
 
 WARNING(availability_deprecated, none,
         "%0 %select{is|%select{is|was}3}1 deprecated"
         "%select{| %select{on|in}3 %2%select{| %4}3}1",
-        (DeclName, bool, StringRef, bool, clang::VersionTuple))
+        (DeclName, bool, StringRef, bool))
 
 WARNING(availability_deprecated_msg, none,
         "%0 %select{is|%select{is|was}3}1 deprecated"
         "%select{| %select{on|in}3 %2%select{| %4}3}1: %5",
-        (DeclName, bool, StringRef, bool, clang::VersionTuple, StringRef))
+        (DeclName, bool, StringRef, bool, StringRef))
 
 WARNING(availability_deprecated_rename, none,
         "%0 %select{is|%select{is|was}3}1 deprecated"
         "%select{| %select{on|in}3 %2%select{| %4}3}1: "
         "%select{renamed to|replaced by}5%" REPLACEMENT_DECL_KIND_SELECT "6 "
         "'%7'",
-        (DeclName, bool, StringRef, bool, clang::VersionTuple, bool, unsigned,
+        (DeclName, bool, StringRef, bool, bool, unsigned,
          StringRef))
 #undef REPLACEMENT_DECL_KIND_SELECT
 
@@ -3269,7 +3269,7 @@ NOTE(availability_decl_more_than_enclosing_enclosing_here, none,
 
 ERROR(availability_decl_only_version_newer, none,
       "%0 is only available on %1 %2 or newer",
-      (DeclName, StringRef, clang::VersionTuple))
+      (DeclName, StringRef))
 
 NOTE(availability_guard_with_version_check, none,
      "add 'if #available' version check", ())
@@ -3280,12 +3280,12 @@ NOTE(availability_add_attribute, none,
 ERROR(availability_accessor_only_version_newer, none,
       "%select{getter|setter}0 for %1 is only available on %2 %3"
       " or newer",
-      (/*AccessorKind*/unsigned, DeclName, StringRef, clang::VersionTuple))
+      (/*AccessorKind*/unsigned, DeclName, StringRef))
 
 ERROR(availability_inout_accessor_only_version_newer, none,
       "cannot pass as inout because %select{getter|setter}0 for %1 is only "
       "available on %2 %3 or newer",
-      (/*AccessorKind*/unsigned, DeclName, StringRef, clang::VersionTuple))
+      (/*AccessorKind*/unsigned, DeclName, StringRef))
 
 ERROR(availability_query_required_for_platform, none,
       "condition required for target platform '%0'", (StringRef))
@@ -3307,7 +3307,7 @@ ERROR(availability_stored_property_no_potential,
 
 ERROR(availability_protocol_requires_version,
       none, "protocol %0 requires %1 to be available on %2 %3 and newer",
-      (DeclName, DeclName, StringRef, clang::VersionTuple))
+      (DeclName, DeclName, StringRef))
 
 NOTE(availability_protocol_requirement_here, none,
      "protocol requirement here", ())

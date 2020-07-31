@@ -100,14 +100,21 @@ StringRef swift::getPlatformNameForTriple(const llvm::Triple &triple) {
   case llvm::Triple::RTEMS:
   case llvm::Triple::NaCl:
   case llvm::Triple::CNK:
-//  case llvm::Triple::Bitrig:
   case llvm::Triple::AIX:
   case llvm::Triple::CUDA:
   case llvm::Triple::NVCL:
   case llvm::Triple::AMDHSA:
   case llvm::Triple::ELFIAMCU:
   case llvm::Triple::Mesa3D:
-    return "";
+  case llvm::Triple::Ananas:
+  case llvm::Triple::Fuchsia:
+  case llvm::Triple::Contiki:
+  case llvm::Triple::AMDPAL:
+  case llvm::Triple::HermitCore:
+  case llvm::Triple::Hurd:
+  case llvm::Triple::Emscripten:
+  case llvm::Triple::WASI:
+      return "";
   case llvm::Triple::Darwin:
   case llvm::Triple::MacOSX:
   case llvm::Triple::IOS:

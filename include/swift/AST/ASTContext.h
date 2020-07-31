@@ -789,7 +789,7 @@ public:
 
   /// Collect visible clang modules from the ClangModuleLoader. These modules are
   /// not necessarily loaded.
-  void getVisibleTopLevelClangModules(SmallVectorImpl<clang::Module*> &Modules) const;
+//  void getVisibleTopLevelClangModules(SmallVectorImpl<clang::Module*> &Modules) const;
 
   /// Retrieve or create the stored archetype builder for the given
   /// canonical generic signature and module.

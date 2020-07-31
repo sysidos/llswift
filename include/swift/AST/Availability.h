@@ -19,7 +19,7 @@
 
 #include "swift/AST/Type.h"
 #include "swift/Basic/LLVM.h"
-#include "clang/Basic/VersionTuple.h"
+//#include "clang/Basic/VersionTuple.h"
 #include "llvm/ADT/Optional.h"
 
 namespace swift {
@@ -43,7 +43,7 @@ class VersionRange {
   // a single version tuple value representing the lower end point x.y.z of a
   // range [x.y.z, +Inf).
   union {
-    clang::VersionTuple LowerEndpoint;
+//    clang::VersionTuple LowerEndpoint;
     ExtremalRange ExtremalValue;
   };
   
@@ -65,10 +65,10 @@ public:
   bool hasLowerEndpoint() const { return HasLowerEndpoint; }
 
   /// Returns the range's lower endpoint.
-  const clang::VersionTuple &getLowerEndpoint() const {
-    assert(HasLowerEndpoint);
-    return LowerEndpoint;
-  }
+//  const clang::VersionTuple &getLowerEndpoint() const {
+//    assert(HasLowerEndpoint);
+//    return LowerEndpoint;
+//  }
 
   /// Returns a representation of this range as a string for debugging purposes.
   std::string getAsString() const {
@@ -77,7 +77,8 @@ public:
     } else if (isAll()) {
       return "all";
     } else {
-      return "[" + getLowerEndpoint().getAsString() + ",+Inf)";
+//      return "[" + getLowerEndpoint().getAsString() + ",+Inf)";
+        return  "";
     }
   }
 
@@ -90,7 +91,8 @@ public:
       return false;
 
     // [v1, +Inf) is contained in [v2, +Inf) if v1 >= v2
-    return getLowerEndpoint() >= Other.getLowerEndpoint();
+//    return getLowerEndpoint() >= Other.getLowerEndpoint();
+      return false;
   }
 
   /// Mutates this range to be a best-effort underapproximation of
@@ -110,10 +112,10 @@ public:
     }
 
     // The g.l.b of [v1, +Inf), [v2, +Inf) is [max(v1,v2), +Inf)
-    const clang::VersionTuple maxVersion =
-        std::max(this->getLowerEndpoint(), Other.getLowerEndpoint());
+//    const clang::VersionTuple maxVersion =
+//        std::max(this->getLowerEndpoint(), Other.getLowerEndpoint());
 
-    setLowerEndpoint(maxVersion);
+//    setLowerEndpoint(maxVersion);
   }
 
   /// Mutates this range to be the union of itself and Other. This is the
@@ -131,10 +133,10 @@ public:
     }
 
     // The l.u.b of [v1, +Inf), [v2, +Inf) is [min(v1,v2), +Inf)
-    const clang::VersionTuple minVersion =
-        std::min(this->getLowerEndpoint(), Other.getLowerEndpoint());
-
-    setLowerEndpoint(minVersion);
+//    const clang::VersionTuple minVersion =
+//        std::min(this->getLowerEndpoint(), Other.getLowerEndpoint());
+//
+//    setLowerEndpoint(minVersion);
   }
 
   /// Mutates this range to be a best effort over-approximation of the
@@ -156,14 +158,14 @@ public:
 
   /// Returns a version range representing all versions greater than or equal
   /// to the passed-in version.
-  static VersionRange allGTE(const clang::VersionTuple &EndPoint) {
-    return VersionRange(EndPoint);
-  }
+//  static VersionRange allGTE(const clang::VersionTuple &EndPoint) {
+//    return VersionRange(EndPoint);
+//  }
 
 private:
-  VersionRange(const clang::VersionTuple &LowerEndpoint) {
-    setLowerEndpoint(LowerEndpoint);
-  }
+//  VersionRange(const clang::VersionTuple &LowerEndpoint) {
+//    setLowerEndpoint(LowerEndpoint);
+//  }
 
   VersionRange(ExtremalRange ExtremalValue) {
     setExtremalRange(ExtremalValue);
@@ -174,10 +176,10 @@ private:
     ExtremalValue = Version;
   }
 
-  void setLowerEndpoint(const clang::VersionTuple &Version) {
-    HasLowerEndpoint = 1;
-    LowerEndpoint = Version;
-  }
+//  void setLowerEndpoint(const clang::VersionTuple &Version) {
+//    HasLowerEndpoint = 1;
+//    LowerEndpoint = Version;
+//  }
 };
 
 /// Records the reason a declaration is potentially unavailable.

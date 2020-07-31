@@ -753,19 +753,19 @@ bool Parser::parseNewDeclAttribute(DeclAttributes &Attributes, SourceLoc AtLoc,
 
       for (auto *Spec : Specs) {
         PlatformKind Platform;
-        clang::VersionTuple Version;
+//        clang::VersionTuple Version;
         PlatformAgnosticAvailabilityKind PlatformAgnostic;
 
         if (auto *PlatformVersionSpec =
             dyn_cast<PlatformVersionConstraintAvailabilitySpec>(Spec)) {
           Platform = PlatformVersionSpec->getPlatform();
-          Version = PlatformVersionSpec->getVersion();
+//          Version = PlatformVersionSpec->getVersion();
           PlatformAgnostic = PlatformAgnosticAvailabilityKind::None;
 
         } else if (auto *LanguageVersionSpec =
                    dyn_cast<LanguageVersionConstraintAvailabilitySpec>(Spec)) {
           Platform = PlatformKind::none;
-          Version = LanguageVersionSpec->getVersion();
+//          Version = LanguageVersionSpec->getVersion();
           PlatformAgnostic =
             PlatformAgnosticAvailabilityKind::SwiftVersionSpecific;
 
@@ -778,9 +778,9 @@ bool Parser::parseNewDeclAttribute(DeclAttributes &Attributes, SourceLoc AtLoc,
                                      Platform,
                                      /*Message=*/StringRef(),
                                      /*Rename=*/StringRef(),
-                                     /*Introduced=*/Version,
-                                     /*Deprecated=*/clang::VersionTuple(),
-                                     /*Obsoleted=*/clang::VersionTuple(),
+//                                     /*Introduced=*/Version,
+//                                     /*Deprecated=*/clang::VersionTuple(),
+//                                     /*Obsoleted=*/clang::VersionTuple(),
                                      PlatformAgnostic,
                                      /*Implicit=*/true));
       }
@@ -797,7 +797,7 @@ bool Parser::parseNewDeclAttribute(DeclAttributes &Attributes, SourceLoc AtLoc,
     consumeToken();
 
     StringRef Message, Renamed;
-    clang::VersionTuple Introduced, Deprecated, Obsoleted;
+//    clang::VersionTuple Introduced, Deprecated, Obsoleted;
     auto PlatformAgnostic = PlatformAgnosticAvailabilityKind::None;
     bool AnyAnnotations = false;
     int ParamIndex = 0;
@@ -913,20 +913,20 @@ bool Parser::parseNewDeclAttribute(DeclAttributes &Attributes, SourceLoc AtLoc,
           continue;
         }
 
-        auto &VersionArg = (ArgumentKind == IsIntroduced) ? Introduced :
-                           (ArgumentKind == IsDeprecated) ? Deprecated :
-                                                            Obsoleted;
-
-        SourceRange VersionRange;
-        
-        if (parseVersionTuple(
-                VersionArg, VersionRange,
-                Diagnostic(diag::attr_availability_expected_version,
-                           AttrName))) {
-          DiscardAttribute = true;
-          if (peekToken().isAny(tok::r_paren, tok::comma))
-            consumeToken();
-        }
+//        auto &VersionArg = (ArgumentKind == IsIntroduced) ? Introduced :
+//                           (ArgumentKind == IsDeprecated) ? Deprecated :
+//                                                            Obsoleted;
+//
+//        SourceRange VersionRange;
+//
+//        if (parseVersionTuple(
+//                VersionArg, VersionRange,
+//                Diagnostic(diag::attr_availability_expected_version,
+//                           AttrName))) {
+//          DiscardAttribute = true;
+//          if (peekToken().isAny(tok::r_paren, tok::comma))
+//            consumeToken();
+//        }
 
         break;
       }
@@ -967,12 +967,12 @@ bool Parser::parseNewDeclAttribute(DeclAttributes &Attributes, SourceLoc AtLoc,
       // Treat 'swift' as a valid version-qualifying token, when
       // at least some versions were mentioned and no other
       // platform-agnostic availability spec has been provided.
-      bool SomeVersion = (!Introduced.empty() ||
-                          !Deprecated.empty() ||
-                          !Obsoleted.empty());
+//      bool SomeVersion = (!Introduced.empty() ||
+//                          !Deprecated.empty() ||
+//                          !Obsoleted.empty());
       if (!PlatformKind.hasValue() &&
           Platform == "swift" &&
-          SomeVersion &&
+//          SomeVersion &&
           PlatformAgnostic == PlatformAgnosticAvailabilityKind::None) {
         PlatformKind = PlatformKind::none;
         PlatformAgnostic =
@@ -984,9 +984,9 @@ bool Parser::parseNewDeclAttribute(DeclAttributes &Attributes, SourceLoc AtLoc,
                        AvailableAttr(AtLoc, AttrRange,
                                         PlatformKind.getValue(),
                                         Message, Renamed,
-                                        Introduced,
-                                        Deprecated,
-                                        Obsoleted,
+//                                        Introduced,
+//                                        Deprecated,
+//                                        Obsoleted,
                                         PlatformAgnostic,
                                         /*Implicit=*/false));
       } else {
@@ -1146,67 +1146,67 @@ bool Parser::parseNewDeclAttribute(DeclAttributes &Attributes, SourceLoc AtLoc,
   return false;
 }
 
-bool Parser::parseVersionTuple(clang::VersionTuple &Version,
-                               SourceRange &Range,
-                               const Diagnostic &D) {
-  // A version number is either an integer (8), a float (8.1), or a
-  // float followed by a dot and an integer (8.1.0).
-  if (!Tok.isAny(tok::integer_literal, tok::floating_literal)) {
-    diagnose(Tok, D);
-    return true;
-  }
-
-  SourceLoc StartLoc = Tok.getLoc();
-  
-  if (Tok.is(tok::integer_literal)) {
-    unsigned major = 0;
-    if (Tok.getText().getAsInteger(10, major)) {
-      // Maybe the literal was in hex. Reject that.
-      diagnose(Tok, D);
-      consumeToken();
-      return true;
-    }
-    Version = clang::VersionTuple(major);
-    Range = SourceRange(StartLoc, Tok.getLoc());
-    consumeToken();
-    return false;
-  }
-
-  unsigned major = 0, minor = 0;
-  StringRef majorPart, minorPart;
-  std::tie(majorPart, minorPart) = Tok.getText().split('.');
-  if (majorPart.getAsInteger(10, major) || minorPart.getAsInteger(10, minor)) {
-    // Reject things like 0.1e5 and hex literals.
-    diagnose(Tok, D);
-    consumeToken();
-    return true;
-  }
-
-  Range = SourceRange(StartLoc, Tok.getLoc());
-  consumeToken();
-  
-  if (consumeIf(tok::period)) {
-    unsigned micro = 0;
-    if (!Tok.is(tok::integer_literal) ||
-        Tok.getText().getAsInteger(10, micro)) {
-      // Reject things like 0.1e5 and hex literals.
-      diagnose(Tok, D);
-      if (Tok.is(tok::integer_literal) ||
-          peekToken().isAny(tok::r_paren, tok::comma))
-        consumeToken();
-      return true;
-    }
-    
-    Range = SourceRange(StartLoc, Tok.getLoc());
-    consumeToken();
-    
-    Version = clang::VersionTuple(major, minor, micro);
-  } else {
-    Version = clang::VersionTuple(major, minor);
-  }
-
-  return false;
-}
+//bool Parser::parseVersionTuple(clang::VersionTuple &Version,
+//                               SourceRange &Range,
+//                               const Diagnostic &D) {
+//  // A version number is either an integer (8), a float (8.1), or a
+//  // float followed by a dot and an integer (8.1.0).
+//  if (!Tok.isAny(tok::integer_literal, tok::floating_literal)) {
+//    diagnose(Tok, D);
+//    return true;
+//  }
+//
+//  SourceLoc StartLoc = Tok.getLoc();
+//
+//  if (Tok.is(tok::integer_literal)) {
+//    unsigned major = 0;
+//    if (Tok.getText().getAsInteger(10, major)) {
+//      // Maybe the literal was in hex. Reject that.
+//      diagnose(Tok, D);
+//      consumeToken();
+//      return true;
+//    }
+//    Version = clang::VersionTuple(major);
+//    Range = SourceRange(StartLoc, Tok.getLoc());
+//    consumeToken();
+//    return false;
+//  }
+//
+//  unsigned major = 0, minor = 0;
+//  StringRef majorPart, minorPart;
+//  std::tie(majorPart, minorPart) = Tok.getText().split('.');
+//  if (majorPart.getAsInteger(10, major) || minorPart.getAsInteger(10, minor)) {
+//    // Reject things like 0.1e5 and hex literals.
+//    diagnose(Tok, D);
+//    consumeToken();
+//    return true;
+//  }
+//
+//  Range = SourceRange(StartLoc, Tok.getLoc());
+//  consumeToken();
+//
+//  if (consumeIf(tok::period)) {
+//    unsigned micro = 0;
+//    if (!Tok.is(tok::integer_literal) ||
+//        Tok.getText().getAsInteger(10, micro)) {
+//      // Reject things like 0.1e5 and hex literals.
+//      diagnose(Tok, D);
+//      if (Tok.is(tok::integer_literal) ||
+//          peekToken().isAny(tok::r_paren, tok::comma))
+//        consumeToken();
+//      return true;
+//    }
+//
+//    Range = SourceRange(StartLoc, Tok.getLoc());
+//    consumeToken();
+//
+//    Version = clang::VersionTuple(major, minor, micro);
+//  } else {
+//    Version = clang::VersionTuple(major, minor);
+//  }
+//
+//  return false;
+//}
 
 /// \verbatim
 ///   attribute:

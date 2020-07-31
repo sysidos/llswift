@@ -3805,7 +3805,7 @@ class ArchetypeType final : public SubstitutableType,
     return getOpenedExistentialType() ? 1 : 0;
   }
 
-  llvm::PointerUnion3<ArchetypeType *, TypeBase *,
+  llvm::PointerUnion<ArchetypeType *, TypeBase *,
                       GenericEnvironment *> ParentOrOpenedOrEnvironment;
   llvm::PointerUnion<AssociatedTypeDecl *, Identifier> AssocTypeOrName;
   MutableArrayRef<std::pair<Identifier, Type>> NestedTypes;

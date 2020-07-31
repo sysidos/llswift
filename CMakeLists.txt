@@ -39,7 +39,7 @@ add_subdirectory(lib)
 
 add_executable(swift main.cpp)
 target_link_libraries(swift ${llvm_libs})
-target_link_libraries(swift swiftBasic)
+target_link_libraries(swift swiftBasic swiftAST swiftParse swiftSema swiftSerialization swiftSIL)
 
 
 

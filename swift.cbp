@@ -5,7 +5,7 @@
 		<Option title="swift"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\opt\;CMake Files\..\..\..\..\usr\local\opt\llvm\;CMake Files\..\..\..\..\usr\local\opt\llvm\lib\;CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\;CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\llvm\;CMake Files\include\;CMake Files\include\swift\;CMake Files\lib\;CMake Files\lib\AST\;CMake Files\lib\Basic\;CMake Files\lib\Parse\;CMake Files\lib\Sema\;CMake Files\lib\Serialization\;CMake Files\lib\SIL\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\opt\;CMake Files\..\..\..\..\usr\local\opt\llvm\;CMake Files\..\..\..\..\usr\local\opt\llvm\lib\;CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\;CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\llvm\;CMake Files\include\;CMake Files\include\swift\;CMake Files\lib\;CMake Files\lib\AST\;CMake Files\lib\Basic\;CMake Files\lib\Parse\;CMake Files\lib\Sema\;CMake Files\lib\SIL\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/p21_0044/Desktop/llswift"/>
@@ -215,40 +215,6 @@
 					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Sema/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Sema/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Sema/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="swiftSerialization">
-				<Option output="/Users/p21_0044/Desktop/llswift/lib/Serialization/libswiftSerialization.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/p21_0044/Desktop/llswift/lib/Serialization"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/opt/llvm/include"/>
-					<Add directory="/Users/p21_0044/Desktop/llswift/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Serialization/Makefile&quot;  VERBOSE=1 swiftSerialization"/>
-					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Serialization/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Serialization/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Serialization/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="swiftSerialization/fast">
-				<Option output="/Users/p21_0044/Desktop/llswift/lib/Serialization/libswiftSerialization.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/p21_0044/Desktop/llswift/lib/Serialization"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/opt/llvm/include"/>
-					<Add directory="/Users/p21_0044/Desktop/llswift/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Serialization/Makefile&quot;  VERBOSE=1 swiftSerialization/fast"/>
-					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Serialization/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Serialization/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Serialization/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="swiftSIL">
@@ -835,33 +801,6 @@
 		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/TypeChecker.h">
 			<Option target="swiftSema"/>
 		</Unit>
-		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Serialization/Deserialization.cpp">
-			<Option target="swiftSerialization"/>
-		</Unit>
-		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Serialization/DeserializeSIL.cpp">
-			<Option target="swiftSerialization"/>
-		</Unit>
-		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Serialization/DeserializeSIL.h">
-			<Option target="swiftSerialization"/>
-		</Unit>
-		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Serialization/ModuleFile.cpp">
-			<Option target="swiftSerialization"/>
-		</Unit>
-		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Serialization/Serialization.cpp">
-			<Option target="swiftSerialization"/>
-		</Unit>
-		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Serialization/Serialization.h">
-			<Option target="swiftSerialization"/>
-		</Unit>
-		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Serialization/SerializeSIL.cpp">
-			<Option target="swiftSerialization"/>
-		</Unit>
-		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Serialization/SerializedModuleLoader.cpp">
-			<Option target="swiftSerialization"/>
-		</Unit>
-		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Serialization/SerializedSILLoader.cpp">
-			<Option target="swiftSerialization"/>
-		</Unit>
 		<Unit filename="/Users/p21_0044/Desktop/llswift/main.cpp">
 			<Option target="swift"/>
 		</Unit>
@@ -900,9 +839,6 @@
 		</Unit>
 		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Sema/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\Sema\"/>
-		</Unit>
-		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Serialization/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\lib\Serialization\"/>
 		</Unit>
 		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/SIL/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\SIL\"/>

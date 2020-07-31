@@ -19,7 +19,7 @@
 
 #include "swift/AST/AccessScope.h"
 #include "swift/AST/CaptureInfo.h"
-#include "swift/AST/ClangNode.h"
+//#include "swift/AST/ClangNode.h"
 #include "swift/AST/ConcreteDeclRef.h"
 #include "swift/AST/DefaultArgumentKind.h"
 #include "swift/AST/GenericSignature.h"
@@ -654,24 +654,24 @@ protected:
     DeclBits.BeingValidated = false;
   }
 
-  ClangNode getClangNodeImpl() const {
-    assert(DeclBits.FromClang);
-    return ClangNode::getFromOpaqueValue(
-        *(reinterpret_cast<void * const*>(this) - 1));
-  }
+//  ClangNode getClangNodeImpl() const {
+//    assert(DeclBits.FromClang);
+//    return ClangNode::getFromOpaqueValue(
+//        *(reinterpret_cast<void * const*>(this) - 1));
+//  }
 
-  /// \brief Set the Clang node associated with this declaration.
-  void setClangNode(ClangNode Node) {
-    DeclBits.FromClang = true;
-    // Extra memory is allocated for this.
-    *(reinterpret_cast<void **>(this) - 1) = Node.getOpaqueValue();
-  }
-
-  void updateClangNode(ClangNode node) {
-    assert(hasClangNode());
-    setClangNode(node);
-  }
-  friend class ClangImporter;
+//  /// \brief Set the Clang node associated with this declaration.
+//  void setClangNode(ClangNode Node) {
+//    DeclBits.FromClang = true;
+//    // Extra memory is allocated for this.
+//    *(reinterpret_cast<void **>(this) - 1) = Node.getOpaqueValue();
+//  }
+//
+//  void updateClangNode(ClangNode node) {
+//    assert(hasClangNode());
+//    setClangNode(node);
+//  }
+//  friend class ClangImporter;
 
   DeclContext *getDeclContextForModule() const;
 
@@ -825,32 +825,32 @@ public:
     return DeclBits.FromClang;
   }
 
-  /// \brief Retrieve the Clang AST node from which this declaration was
-  /// synthesized, if any.
-  ClangNode getClangNode() const {
-    if (!DeclBits.FromClang)
-      return ClangNode();
-
-    return getClangNodeImpl();
-  }
-
-  /// \brief Retrieve the Clang declaration from which this declaration was
-  /// synthesized, if any.
-  const clang::Decl *getClangDecl() const {
-    if (!DeclBits.FromClang)
-      return nullptr;
-
-    return getClangNodeImpl().getAsDecl();
-  }
-
-  /// \brief Retrieve the Clang macro from which this declaration was
-  /// synthesized, if any.
-  const clang::MacroInfo *getClangMacro() {
-    if (!DeclBits.FromClang)
-      return nullptr;
-
-    return getClangNodeImpl().getAsMacro();
-  }
+//  /// \brief Retrieve the Clang AST node from which this declaration was
+//  /// synthesized, if any.
+//  ClangNode getClangNode() const {
+//    if (!DeclBits.FromClang)
+//      return ClangNode();
+//
+//    return getClangNodeImpl();
+//  }
+//
+//  /// \brief Retrieve the Clang declaration from which this declaration was
+//  /// synthesized, if any.
+//  const clang::Decl *getClangDecl() const {
+//    if (!DeclBits.FromClang)
+//      return nullptr;
+//
+//    return getClangNodeImpl().getAsDecl();
+//  }
+//
+//  /// \brief Retrieve the Clang macro from which this declaration was
+//  /// synthesized, if any.
+//  const clang::MacroInfo *getClangMacro() {
+//    if (!DeclBits.FromClang)
+//      return nullptr;
+//
+//    return getClangNodeImpl().getAsMacro();
+//  }
 
   bool isPrivateStdlibDecl(bool whitelistProtocols=true) const;
 
@@ -1400,8 +1400,10 @@ public:
   static ImportDecl *create(ASTContext &C, DeclContext *DC,
                             SourceLoc ImportLoc, ImportKind Kind,
                             SourceLoc KindLoc,
-                            ArrayRef<AccessPathElement> Path,
-                            ClangNode ClangN = ClangNode());
+                            ArrayRef<AccessPathElement> Path
+//                            ,
+//                            ClangNode ClangN = ClangNode()
+                                    );
 
   /// Returns the import kind that is most appropriate for \p VD.
   ///
@@ -1446,9 +1448,9 @@ public:
   ArrayRef<ValueDecl *> getDecls() const { return Decls; }
   void setDecls(ArrayRef<ValueDecl *> Ds) { Decls = Ds; }
 
-  const clang::Module *getClangModule() const {
-    return getClangNode().getClangModule();
-  }
+//  const clang::Module *getClangModule() const {
+//    return getClangNode().getClangModule();
+//  }
 
   SourceLoc getStartLoc() const { return ImportLoc; }
   SourceLoc getLoc() const { return getFullAccessPath().front().second; }
@@ -1536,8 +1538,10 @@ public:
                                TypeLoc extendedType,
                                MutableArrayRef<TypeLoc> inherited,
                                DeclContext *parent,
-                               TrailingWhereClause *trailingWhereClause,
-                               ClangNode clangNode = ClangNode());
+                               TrailingWhereClause *trailingWhereClause
+//                               ,
+//                               ClangNode clangNode = ClangNode()
+                                       );
 
   SourceLoc getStartLoc() const { return ExtensionLoc; }
   SourceLoc getLoc() const { return ExtensionLoc; }
@@ -4996,8 +5000,10 @@ class FuncDecl final : public AbstractFunctionDecl,
                               SourceLoc AccessorKeywordLoc,
                               GenericParamList *GenericParams,
                               unsigned NumParameterLists,
-                              DeclContext *Parent,
-                              ClangNode ClangN);
+                              DeclContext *Parent
+//                              ,
+//                              ClangNode ClangN
+                              );
 
 public:
   /// Factory function only for use by deserialization.
@@ -5019,8 +5025,10 @@ public:
                           SourceLoc AccessorKeywordLoc,
                           GenericParamList *GenericParams,
                           ArrayRef<ParameterList *> ParameterLists,
-                          TypeLoc FnRetType, DeclContext *Parent,
-                          ClangNode ClangN = ClangNode());
+                          TypeLoc FnRetType, DeclContext *Parent
+//                          ,
+//                          ClangNode ClangN = ClangNode()
+                                  );
 
   bool isStatic() const {
     return FuncDeclBits.IsStatic;
