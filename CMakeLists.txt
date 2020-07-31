@@ -4,17 +4,6 @@ project(swift)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(SWIFT_VERSION "3.1.1")
-message(STATUS "Swift version: ${SWIFT_VERSION}")
-
-string(REGEX REPLACE "([0-9]+)\\.[0-9]+(\\.[0-9]+)?" "\\1" SWIFT_VERSION_MAJOR
-        ${SWIFT_VERSION})
-string(REGEX REPLACE "[0-9]+\\.([0-9]+)(\\.[0-9]+)?" "\\1" SWIFT_VERSION_MINOR
-        ${SWIFT_VERSION})
-
-message(STATUS "SWIFT_VERSION_MAJOR: ${SWIFT_VERSION_MAJOR}")
-message(STATUS "SWIFT_VERSION_MINOR: ${SWIFT_VERSION_MINOR}")
-
 # LLVM 8.0.1
 find_package(LLVM REQUIRED CONFIG)
 message(STATUS "Found LLVM ${LLVM_PACKAGE_VERSION}")
@@ -24,14 +13,6 @@ add_definitions(${LLVM_DEFINITIONS})
 llvm_map_components_to_libnames(llvm_libs support core analysis irreader bitreader bitwriter coverage debuginfoDWARF
         profiledata instrumentation object objcarcopts mc mcparser
         bitreader bitwriter lto ipo option)
-
-## CLANG
-#find_package(CLANG REQUIRED CONFIG)
-#message(STATUS "Found CLANG ${CLANG_VERSION}")
-#message(STATUS "Using CLANGConfig.cmake in: ${CLANG_DIR}")
-#include_directories(${CLANG_INCLUDE_DIRS})
-#add_definitions(${CLANG_DEFINITIONS})
-
 
 # SOURCE
 include_directories(include)

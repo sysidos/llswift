@@ -30,7 +30,7 @@ namespace swift {
         std::string getSwiftFullVersion() {
             std::string buf;
             llvm::raw_string_ostream OS(buf);
-            OS << "Swift version (swift-3.1.1-RELEASE)";
+            OS << "Swift version 3.1.1";
             return OS.str();
         }
     } // end namespace version
