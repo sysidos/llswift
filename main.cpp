@@ -1,7 +1,8 @@
 #include <iostream>
-#include "swift/Basic/LLVM.h"
+#include "swift/Basic/Version.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    swift::version::getSwiftNumericVersion();
+    std::cout << swift::version::getSwiftFullVersion() << std::endl;
     return 0;
 }

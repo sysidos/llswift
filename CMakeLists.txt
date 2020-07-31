@@ -40,4 +40,4 @@ add_subdirectory(lib)
 
 # TARGETS
 add_executable(swift main.cpp)
-target_link_libraries(swift ${llvm_libs})
+target_link_libraries(swift ${llvm_libs} swiftBasic)
