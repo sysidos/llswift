@@ -1,18 +1,6 @@
-//===--- Version.cpp - Swift Version Number -------------------------------===//
 //
-// This source file is part of the Swift.org open source project
+// Created by P21_0044 on 31/07/20.
 //
-// Copyright (c) 2014 - 2017 Apple Inc. and the Swift project authors
-// Licensed under Apache License v2.0 with Runtime Library Exception
-//
-// See https://swift.org/LICENSE.txt for license information
-// See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
-//
-//===----------------------------------------------------------------------===//
-//
-// This file defines several version-related utility functions for Swift.
-//
-//===----------------------------------------------------------------------===//
 
 #include "llvm/Support/raw_ostream.h"
 #include "swift/Basic/LLVM.h"
