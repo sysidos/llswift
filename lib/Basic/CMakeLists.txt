@@ -15,4 +15,5 @@ add_library(
         Version.cpp
         UUID.cpp
         Unicode.cpp
+        Timer.cpp
         )
