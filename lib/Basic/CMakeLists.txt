@@ -1,0 +1,1 @@
+add_library(swiftBasic STATIC Version.cpp)

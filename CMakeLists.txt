@@ -26,8 +26,10 @@ llvm_map_components_to_libnames(llvm_libs support core analysis irreader bitread
 
 
 # SOURCE
-include_directories(include)
-add_subdirectory(lib)
+#include_directories(include)
+#add_subdirectory(lib)
+
+#target_link_libraries(swiftBasic ${llvm_libs})
 
 # TARGETS
 add_executable(swift main.cpp)
