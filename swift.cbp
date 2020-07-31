@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="swift"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\opt\;CMake Files\..\..\..\..\usr\local\opt\llvm\;CMake Files\..\..\..\..\usr\local\opt\llvm\lib\;CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\;CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\llvm\;CMake Files\lib\;CMake Files\lib\Basic\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/p21_0044/Desktop/llswift"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/p21_0044/Desktop/llswift"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/p21_0044/Desktop/llswift"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="swift">
+				<Option output="/Users/p21_0044/Desktop/llswift/swift" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/p21_0044/Desktop/llswift"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/include"/>
+					<Add directory="/Users/p21_0044/Desktop/llswift/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 swift"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="swift/fast">
+				<Option output="/Users/p21_0044/Desktop/llswift/swift" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/p21_0044/Desktop/llswift"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/include"/>
+					<Add directory="/Users/p21_0044/Desktop/llswift/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 swift/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="intrinsics_gen">
+				<Option working_dir="/Users/p21_0044/Desktop/llswift"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 intrinsics_gen"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="swiftBasic">
+				<Option output="/Users/p21_0044/Desktop/llswift/lib/Basic/libswiftBasic.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/p21_0044/Desktop/llswift/lib/Basic"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/include"/>
+					<Add directory="/Users/p21_0044/Desktop/llswift/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Basic/Makefile&quot;  VERBOSE=1 swiftBasic"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Basic/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Basic/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Basic/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="swiftBasic/fast">
+				<Option output="/Users/p21_0044/Desktop/llswift/lib/Basic/libswiftBasic.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/p21_0044/Desktop/llswift/lib/Basic"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opt/llvm/include"/>
+					<Add directory="/Users/p21_0044/Desktop/llswift/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Basic/Makefile&quot;  VERBOSE=1 swiftBasic/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Basic/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Basic/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/p21_0044/Desktop/llswift/lib/Basic/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/Version.cpp">
+			<Option target="swiftBasic"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/main.cpp">
+			<Option target="swift"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/../../../../usr/local/opt/llvm/lib/cmake/llvm/LLVM-Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/../../../../usr/local/opt/llvm/lib/cmake/llvm/LLVMConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/../../../../usr/local/opt/llvm/lib/cmake/llvm/LLVMConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/../../../../usr/local/opt/llvm/lib/cmake/llvm/LLVMExports-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/../../../../usr/local/opt/llvm/lib/cmake/llvm/LLVMExports.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\opt\llvm\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\"/>
+		</Unit>
+		<Unit filename="/Users/p21_0044/Desktop/llswift/lib/Basic/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\Basic\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
