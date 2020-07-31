@@ -13,3 +13,5 @@ cmake-build-debug
 .idea
 .vscode
 build
+swift
+swift.cbp
