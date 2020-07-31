@@ -1,7 +1,6 @@
-
-#include "swift/Basic/UUID.h"
+#include <iostream>
 
 int main() {
-    swift::UUID();
+    std::cout << "Hello, World!" << std::endl;
     return 0;
 }
